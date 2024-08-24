@@ -1,0 +1,516 @@
+body{
+    background: rgb(0,87,255);
+    background: linear-gradient(90deg, rgba(0,87,255,1) 6%, rgba(101,0,139,1) 49%, rgba(2,0,36,1) 92%);
+}
+
+.containertop{
+    background-color: rgb(102, 102, 102);
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+.custom-heading {
+    background-color: rgb(118, 0, 154); /* Background color */
+    color: white; /* Text color */
+    margin-top: 20px; /* Margin */
+    border-radius: 30px;
+    padding-bottom: 5px;
+}
+
+.live-icon {
+    display: inline-block;
+    position: relative;
+    top: calc(1%); /* Center the icon vertically */
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    margin-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.live-icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: live 2s ease-in-out infinite;
+    z-index: -1;
+}
+
+@keyframes live {
+    0% {
+        transform: scale(1);
+        background-color: rgba(255, 0, 0, 0.6);
+    }
+    100% {
+        transform: scale(3.5);
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+#dark_hero_img{
+    height: 100px;
+    width: 100px;
+}
+.logo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    perspective: 1000px; /* Adds perspective to create a 3D effect */
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    transition: transform 2s;
+    transform-style: preserve-3d; /* Ensure children are transformed in 3D space */
+}
+
+.logo:hover {
+    transform: rotateY(360deg); /* Rotate the logo 360 degrees around the Y-axis on hover */
+}
+
+.logo-container span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-pills{
+    gap: 40px;
+}
+.nav-item{
+    border: 2px solid black;
+    border-radius: 20px;
+    
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    background: rgb(0,87,255);
+    background: linear-gradient(90deg, rgba(0,87,255,1) 6%, rgba(101,0,139,1) 49%); 
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.social-icon-container {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .social-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border: 3px solid transparent;
+  }
+  
+  .social-icon-container:hover .social-icon {
+    border: 3px solid #008cff; /* Glowing border color */
+    border-radius: 50%;
+  }
+  .footergap{
+    gap: 70px;
+  }
+  #div1{
+    margin-top: 20px;
+    background-color: #303030;
+  }
+#projectimages{
+border-radius: 50%;
+}
+.e-card {
+    background: transparent;
+    box-shadow: none; /* Remove any shadow */
+    position: relative;
+    width: 240px;
+    height: 330px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: none; /* Ensure no border */
+  }
+  
+  .wave {
+    position: absolute;
+    width: 540px;
+    height: 700px;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    margin-left: -50%;
+    margin-top: -70%;
+    background: linear-gradient(744deg, #9000f8, #5e46ff 60%, #eb0000);
+  }
+  
+  .icon {
+    width: 3em;
+    margin-top: -1em;
+    padding-bottom: 1em;
+  }
+  
+  .infotop {
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    top: 5.6em;
+    left: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+  }
+  
+  .name {
+    font-size:larger;
+    position: relative;
+    top: 1em;
+    color: black;
+  }
+  
+  .wave:nth-child(2),
+  .wave:nth-child(3) {
+    top: 210px;
+  }
+  
+  .playing .wave {
+    border-radius: 40%;
+    animation: wave 3000ms infinite linear;
+  }
+  
+  .wave {
+    border-radius: 40%;
+    animation: wave 55s infinite linear;
+  }
+  
+  .playing .wave:nth-child(2) {
+    animation-duration: 4000ms;
+  }
+  
+  .wave:nth-child(2) {
+    animation-duration: 50s;
+  }
+  
+  .playing .wave:nth-child(3) {
+    animation-duration: 5000ms;
+  }
+  
+  .wave:nth-child(3) {
+    animation-duration: 45s;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+#colortext{
+    color: white;
+}
+#div1{
+    background-color: transparent;
+}
+.custom-heading{
+    background-color: transparent;
+}
+
+/* From Uiverse.io by Spacious74 */ 
+.outer {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  padding: 1px;
+  background: radial-gradient(circle 230px at 0% 0%, #ffffff, #0c0d0d);
+  position: relative;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.dot {
+  width: 5px;
+  aspect-ratio: 1;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 100px;
+  z-index: 2;
+}
+
+.dot1 {
+  top: 10%;
+  right: 10%;
+  animation: moveDot1 2s linear infinite;
+}
+
+.dot2 {
+  top: 10%;
+  right: 25%;
+  animation: moveDot2 4s linear infinite;
+}
+
+.dot3 {
+  top: 10%;
+  right: 40%;
+  animation: moveDot3 6s linear infinite;
+}
+
+.dot4 {
+  top: 10%;
+  right: 55%;
+  animation: moveDot4 8s linear infinite;
+}
+
+@keyframes moveDot1 {
+  0%,
+  100% {
+    top: 10%;
+    right: 10%;
+  }
+  25% {
+    top: 10%;
+    right: calc(100% - 35px);
+  }
+  50% {
+    top: calc(100% - 30px);
+    right: calc(100% - 35px);
+  }
+  75% {
+    top: calc(100% - 30px);
+    right: 10%;
+  }
+}
+
+@keyframes moveDot2 {
+  0%,
+  100% {
+    top: 10%;
+    right: 10%;
+  }
+  25% {
+    top: 10%;
+    right: calc(100% - 35px);
+  }
+  50% {
+    top: calc(100% - 30px);
+    right: calc(100% - 35px);
+  }
+  75% {
+    top: calc(100% - 30px);
+    right: 10%;
+  }
+}
+@keyframes moveDot3 {
+  0%,
+  100% {
+    top: 10%;
+    right: 10%;
+  }
+  25% {
+    top: 10%;
+    right: calc(100% - 35px);
+  }
+  50% {
+    top: calc(100% - 30px);
+    right: calc(100% - 35px);
+  }
+  75% {
+    top: calc(100% - 30px);
+    right: 10%;
+  }
+}
+
+@keyframes moveDot4 {
+  0%,
+  100% {
+    top: 10%;
+    right: 10%;
+  }
+  25% {
+    top: 10%;
+    right: calc(100% - 35px);
+  }
+  50% {
+    top: calc(100% - 30px);
+    right: calc(100% - 35px);
+  }
+  75% {
+    top: calc(100% - 30px);
+    right: 10%;
+  }
+}
+
+.card {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+  border: solid 1px #202222;
+  background-size: 20px 20px;
+  background: radial-gradient(circle 280px at 0% 0%, #444444, #0c0d0d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  color: #fff;
+}
+
+.ray {
+  width: 220px;
+  height: 45px;
+  border-radius: 100px;
+  position: absolute;
+  background-color: #c7c7c7;
+  opacity: 0.4;
+  box-shadow: 0 0 50px #fff;
+  filter: blur(10px);
+  transform-origin: 10%;
+  top: 0%;
+  left: 0;
+  transform: rotate(40deg);
+}
+
+.card .text {
+  font-weight: bolder;
+  font-size: 4rem;
+  background: linear-gradient(45deg, #000000 4%, #fff, #000);
+  background-clip: text;
+  color: transparent;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #2c2c2c;
+}
+
+.topl {
+  top: 10%;
+  background: linear-gradient(90deg, #888888 30%, #1d1f1f 70%);
+}
+
+.bottoml {
+  bottom: 10%;
+}
+
+.leftl {
+  left: 10%;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, #747474 30%, #222424 70%);
+}
+
+.rightl {
+  right: 10%;
+  width: 1px;
+  height: 100%;
+}
+/* From Uiverse.io by kleenpulse */ 
+.btn {
+  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  --border-width: 0.125em;
+  --curve-size: 0.5em;
+  --blur: 30px;
+  --bg: #080312;
+  --color: #afffff;
+  color: var(--color);
+  cursor: pointer;
+  /* use position: relative; so that BG is only for .btn */
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  padding: 0.5em 1.5em;
+  font-size: 17px;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  clip-path: polygon(
+    /* Top-left */ 0% var(--curve-size),
+    var(--curve-size) 0,
+    /* top-right */ 100% 0,
+    100% calc(100% - var(--curve-size)),
+    /* bottom-right 1 */ calc(100% - var(--curve-size)) 100%,
+    /* bottom-right 2 */ 0 100%
+  );
+  transition: color 250ms;
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.btn::before {
+  background: var(--border-color);
+  background-size: 300% 300%;
+  animation: move-bg7234 5s ease infinite;
+  z-index: -2;
+}
+
+@keyframes move-bg7234 {
+  0% {
+    background-position: 31% 0%;
+  }
+
+  50% {
+    background-position: 70% 100%;
+  }
+
+  100% {
+    background-position: 31% 0%;
+  }
+}
+
+.btn::after {
+  background: var(--bg);
+  z-index: -1;
+  clip-path: polygon(
+    /* Top-left */ var(--border-width)
+      calc(var(--curve-size) + var(--border-width) * 0.5),
+    calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+    /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+    calc(100% - var(--border-width))
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+      calc(100% - var(--border-width)),
+    /* bottom-right 2 */ var(--border-width) calc(100% - var(--border-width))
+  );
+  transition: clip-path 500ms;
+}
+
+.btn:where(:hover, :focus)::after {
+  clip-path: polygon(
+    /* Top-left */ calc(100% - var(--border-width))
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    calc(100% - var(--border-width)) var(--border-width),
+    /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+    calc(100% - var(--border-width))
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    /* bottom-right 1 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+      calc(100% - var(--border-width)),
+    /* bottom-right 2 */
+      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+      calc(100% - var(--border-width))
+  );
+  transition: 200ms;
+}
+
+.btn:where(:hover, :focus) {
+  color: #fff;
+}
